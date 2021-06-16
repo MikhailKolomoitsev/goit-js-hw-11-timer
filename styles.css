@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 .timer {
   display: flex;
   justify-content: center;
@@ -5,4 +8,12 @@
 .field {
   font-size: 30px;
   margin: 10px;
+}
+.inputField {
+  font-size: small;
+  display: flex;
+  width: 300px;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
 }
