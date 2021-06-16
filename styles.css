@@ -1,0 +1,7 @@
+.timer {
+  display: flex;
+  justify-content: center;
+}
+.field {
+  font-size: 30px;
+}
