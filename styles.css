@@ -12,12 +12,14 @@ body {
 .inputField {
   font-size: small;
   display: flex;
-  width: 300px;
+  width: 350px;
   margin: auto;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
 }
-
+.date {
+  margin: 10px;
+}
 .reset {
   margin-top: 20px;
 }
