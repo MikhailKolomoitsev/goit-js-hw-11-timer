@@ -21,8 +21,10 @@ export default class CountdownTimer{
     }
 
     stop() {
-        clearInterval(this.timerID)
-        this.isActive=false
+        clearInterval(this.timerId)
+        this.isActive = false
+        // const { days, hours, mins, secs }={0, 0, 0, 0}
+        // CountdownTimer.changeLayout({ days, hours, mins, secs }, this.timer)
     }
     static pad(timeValue) {
         return String(timeValue).padStart(2, '0');

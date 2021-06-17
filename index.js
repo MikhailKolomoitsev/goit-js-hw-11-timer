@@ -3,21 +3,20 @@ import CountdownTimer from "./timer.js"
 
 
 const input = document.querySelector('#start')
-const resetBtn=document.querySelector('.reset')
+const resetBtn=document.querySelector('#reset')
 input.addEventListener('input', launchCountdown)
-stopBtn.addEventListener('click', stopCountdown)
+resetBtn.addEventListener('click', stopCountdown)
+
+let new1= new CountdownTimer({
+        selector: '#timer-1',
+        targetDate: input.value,
+    });
 
 function launchCountdown() {
-    let targetD=input.value
-    let new1= new CountdownTimer({
-        selector: '#timer-1',
-        targetDate: targetD,
-    });
-    console.log(new1);
-
+    new1.targetDate=input.value
     new1.start()
-
-    function stopCountdown() {
-        new1.stop()
-    }
 }
+function stopCountdown() {
+  new1.stop()
+}
+
